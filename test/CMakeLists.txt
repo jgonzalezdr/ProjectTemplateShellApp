@@ -14,8 +14,7 @@ if( ENABLE_TEST )
     #
 
     #>>> Add all the subdirectories with your test modules
-    add_subdirectory( ExampleApp )
-    add_subdirectory( ExamplePrivateClass )
+    #add_subdirectory( TestModule )
 
 endif()
 

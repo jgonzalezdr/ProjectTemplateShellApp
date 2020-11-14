@@ -1,0 +1,2 @@
+This file is just here to have git keep the directory even if empty.
+You can safely delete it.
