@@ -100,7 +100,7 @@ TEST( ExampleApp, Version )
 
     // Verify
     CHECK_EQUAL( 0, ret );
-    STRCMP_EQUAL( "ProjectTemplate v1.0", readFromStringBuf(outBuffer) );
+    STRCMP_CONTAINS( "ProjectTemplate v1.0", readFromStringBuf(outBuffer) );
     CHECK_EQUAL( 0, errBuffer.in_avail() );
 
     // Cleanup
