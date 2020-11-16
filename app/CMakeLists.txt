@@ -92,7 +92,9 @@ add_dependencies( build ${PROJECT_NAME} )
 target_include_directories( ${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/libs/cxxopts/include )
 
 set( BUILD_SHARED_LIB OFF )
+set( TARGET_NAMESPACE ColorConsole )
 add_subdirectory( libs/ColorConsole/lib )
+unset( TARGET_NAMESPACE )
 target_link_libraries( ${PROJECT_NAME} ColorConsole_static )
 
 #>>> Uncomment and edit the following commands to add external libraries
