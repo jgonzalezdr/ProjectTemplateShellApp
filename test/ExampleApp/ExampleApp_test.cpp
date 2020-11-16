@@ -140,7 +140,7 @@ TEST( ExampleApp, Input )
 
     // Verify
     CHECK_EQUAL( 0, ret );
-    STRCMP_EQUAL( "RESULT:  55 + 26 = 876 \n", readFromStringBuf(outBuffer) );
+    STRCMP_CONTAINS( "RESULT:  55 + 26 = 876 ", readFromStringBuf(outBuffer) );
     CHECK_EQUAL( 0, errBuffer.in_avail() );
 
     // Cleanup
