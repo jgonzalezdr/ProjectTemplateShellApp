@@ -1,12 +1,3 @@
-/**
- * @file
- * @brief      Unit tests template
- * @project    Project Template
- * @authors    Your Name <yourname@example.com>
- * @copyright  Copyright (c) YEAR Whatever. All rights reserved.
- * @license    See LICENSE.txt
- */
-
 /*===========================================================================
  *                              INCLUDES
  *===========================================================================*/

@@ -1,12 +1,3 @@
-/**
- * @file
- * @brief      Implementation of ExampleApp class
- * @project    ProjectTemplateShellApp
- * @authors    Your Name <yourname@example.com>
- * @copyright  Copyright (c) YEAR Whatever. All rights reserved.
- * @license    See LICENSE.txt
- */
-
 #include "ExampleApp.hpp"
 
 #include <fstream>
