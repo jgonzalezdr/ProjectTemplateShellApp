@@ -6,15 +6,11 @@ project( ProjectTemplate.Test.ExampleApp )
 # Test configuration
 #
 
-set( PROD_DIR ${CMAKE_SOURCE_DIR}/app )
-set( MOCKS_DIR ${CMAKE_SOURCE_DIR}/test/Mocks )
-
 include_directories(
-    ${PROD_DIR}/sources
-    ${PROD_DIR}/include
-    ${CMAKE_BINARY_DIR}/app
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${PROD_DIR}/libs/cxxopts/include
+    ${PROD_SOURCE_DIR}/sources
+    ${PROD_SOURCE_DIR}/include
+    ${PROD_BINARY_DIR}
+    ${PROD_SOURCE_DIR}/libs/cxxopts/include
     ${MOCKS_DIR}
 )
 
@@ -23,7 +19,7 @@ include_directories(
 #
 
 set( PROD_SRC_FILES
-     ${PROD_DIR}/sources/ExampleApp.cpp
+     ${PROD_SOURCE_DIR}/sources/ExampleApp.cpp
 )
 
 #
@@ -42,4 +38,4 @@ set( TEST_SRC_FILES
 
 link_libraries( ColorConsole_static )
 
-include( ../GenerateTest.cmake )
+include( ${TEST_BASE_DIR}/GenerateTest.cmake )
