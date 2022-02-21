@@ -6,13 +6,10 @@ project( ProjectTemplate.Test.TestModule )
 # Test configuration
 #
 
-set( PROD_DIR ${CMAKE_SOURCE_DIR}/app )
-set( MOCKS_DIR ${CMAKE_SOURCE_DIR}/test/Mocks )
-
 include_directories(
-    ${PROD_DIR}/sources
-    ${PROD_DIR}/include
-    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${PROD_SOURCE_DIR}/sources
+    ${PROD_SOURCE_DIR}/include
+    ${PROD_BINARY_DIR}/include
     ${MOCKS_DIR}
 )
 
@@ -22,7 +19,7 @@ include_directories(
 
 #>>> Add your production source files to the following list
 set( PROD_SRC_FILES
-     ${PROD_DIR}/sources/UnitUnderTest.cpp
+     ${PROD_SOURCE_DIR}/sources/UnitUnderTest.cpp
 )
 
 #
@@ -40,4 +37,4 @@ set( TEST_SRC_FILES
 # Generate test target
 #
 
-include( ../GenerateTest.cmake )
+include( ${TEST_BASE_DIR}/GenerateTest.cmake )

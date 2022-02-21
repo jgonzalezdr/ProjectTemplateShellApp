@@ -16,6 +16,8 @@ endif()
 
 add_executable( ${PROJECT_NAME} EXCLUDE_FROM_ALL ${PROD_SRC_FILES} ${TEST_SRC_FILES} ${CMAKE_CURRENT_LIST_DIR}/TestMain.cpp )
 
+target_compile_definitions( ${PROJECT_NAME} PUBLIC _UNITTEST_ )
+
 target_link_libraries( ${PROJECT_NAME} ${CppUTest_LIBRARIES} )
 
 #
