@@ -1,8 +1,8 @@
-
 CMake Shell Application Project Template
 ===========
 [![Build status](https://ci.appveyor.com/api/projects/status/823njdu3qfdg7ddh/branch/main?svg=true)](https://ci.appveyor.com/project/jgonzalezdr/projecttemplateshellapp/branch/main)
 [![codecov](https://codecov.io/gh/jgonzalezdr/ProjectTemplateShellApp/branch/main/graph/badge.svg)](https://codecov.io/gh/jgonzalezdr/ProjectTemplateShellApp)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjgonzalezdr%2FProjectTemplateShellApp.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjgonzalezdr%2FProjectTemplateShellApp?ref=badge_shield)
 ## About
 
 This repository is just a template for a shell (command line) application built using [CMake](https://cmake.org/), and using [cpputest](http://cpputest.github.io/) for unit test execution.
@@ -66,3 +66,7 @@ This repository is just a template for a shell (command line) application built 
 - On Linux:
   - [GCC](https://gcc.gnu.org/) (tested with v7.5.0, v8.4.0 and v9.3.0)
   - [LCOV](http://ltp.sourceforge.net/coverage/lcov.php) [Optional, needed if tests and coverage are enabled using GCC] (tested with v1.14)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjgonzalezdr%2FProjectTemplateShellApp.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjgonzalezdr%2FProjectTemplateShellApp?ref=badge_large)
